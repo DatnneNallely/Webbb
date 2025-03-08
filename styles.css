@@ -584,6 +584,105 @@ img:nth-child(n+2):nth-child(-n+10) {
     50% { transform: translateY(-10px); }
 }
 
-img:nth-child(n+11
+img:nth-child(n+11)
 
+/* Estilos de los botones */
+.btn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
 
+/* Efecto al pasar el cursor */
+.btn:hover {
+    transform: scale(1.1);
+    filter: brightness(0.8);
+}
+/* Estilos del Chatbox */
+.chatbox {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    width: 300px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    display: none; /* Se oculta por defecto */
+}
+
+/* Encabezado del chat */
+.chatbox-header {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Contenedor de mensajes */
+.chatbox-body {
+    padding: 10px;
+    height: 200px;
+    overflow-y: auto;
+    font-size: 14px;
+    color: #333;
+}
+
+/* Input y botón para enviar mensajes */
+.chatbox-footer {
+    display: flex;
+    padding: 10px;
+    border-top: 1px solid #ccc;
+}
+
+.chatbox-footer input {
+    flex: 1;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.chatbox-footer button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-left: 5px;
+    border-radius: 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Efecto en el botón de enviar */
+.chatbox-footer button:hover {
+    transform: scale(1.1);
+    filter: brightness(0.8);
+}
+
+/* Botón flotante para abrir el chat */
+.chatbox-toggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 50%;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Efecto en el botón flotante */
+.chatbox-toggle:hover {
+    transform: scale(1.1);
+    filter: brightness(0.8);
+}
