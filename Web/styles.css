@@ -1,0 +1,589 @@
+/* Importación de fuentes y configuraciones generales */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    color: #333;
+}
+
+/* Barra de navegación */
+.navbar {
+    padding: 15px;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.navbar-nav .nav-link {
+    color: #333;
+    font-weight: 500;
+    margin: 0 10px;
+}
+
+.navbar-nav .btn-warning {
+    font-weight: 600;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+
+
+
+/* Encabezado */
+header {
+    text-align: center;
+    padding: 60px 20px;
+    position: relative;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #1a1a1a;
+}
+
+header p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* Contenedor de la imagen y el botón */
+.header-container {
+    position: relative;
+    display: inline-block;
+    width: 50%;
+}
+
+.header-container .header-btn {
+    position: absolute;
+    top: -50px; /* Coloca el botón por encima de la imagen */
+    left: 50%;
+    transform: translateX(-50%); /* Centra el botón horizontalmente */
+    padding: 12px 24px;
+    background-color: #ff9800;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header-container .header-btn:hover {
+    background-color: #e68900;
+}
+
+.header-container img {
+    width: 100%;
+    height: auto;
+}
+
+
+
+/* Posicionamos el botón encima de la imagen, centrado */
+.header-container .header-btn {
+    position: absolute;
+    top: 100px; /* Colocamos el botón más cerca de la parte superior de la imagen */
+    right: 50%;
+    transform: translateX(-50%);
+    padding: 12px 24px;
+    background-color: #ff9800;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    text-decoration: none;
+    box-shadow: 0px 4px 6px rgba(6, 10, 236, 0.1);
+}
+
+.header-container .header-btn:hover {
+    background-color: #e68900;
+}
+
+
+/* Sección de características */
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 50px;
+    color: rgb(9, 9, 121); /* Cambia el color del título a azul */
+}
+
+.col-md-4 {
+    padding: 20px;
+}
+
+.col-md-4 h4 {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.col-md-4 p {
+    font-size: 1rem;
+    color: #666;
+}
+
+
+/* Pie de página */
+footer {
+    background-color: #f8f9fa;
+    padding: 20px;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+}
+
+.animate-fade-in {
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.animate-slide-in {
+    animation: slideIn 1.2s ease-out;
+}
+
+.animate-bounce {
+    animation: bounce 1s infinite;
+}
+/* Mueve la imagen hacia la izquierda */
+.img-left {
+    float: left; /* Esto mueve la imagen hacia la izquierda */
+    margin-right: 20px; /* Agrega espacio entre la imagen y el texto */
+    width: 50%; /* Ajusta el tamaño de la imagen, puedes cambiar el valor */
+}
+
+/* Para asegurarnos de que el texto no se desborde */
+section {
+    overflow: hidden; /* Esto asegura que el texto no se desborde al lado de la imagen */
+}
+.right-image img {
+    width: 160%; /* Agranda la imagen al 90% de su contenedor */
+    height: auto; /* Mantiene la relación de aspecto de la imagen */
+}
+/*fonfo
+.powering-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background-color: #007bff; /* Puedes cambiar el color aquí */
+}
+
+.powering-section .left-image {
+    width: 45%;
+}
+
+.powering-section .left-image img {
+    width: 100%;
+    border: 4px solid #011366; /* Puedes cambiar el color aquí */
+}
+
+.powering-section .right-content {
+    width: 50%;
+    text-align: left;
+}
+
+.powering-section h2 {
+    color: white; /* Puedes cambiar el color aquí */
+    font-size: 2.5rem;
+}
+
+.powering-section p {
+    color: white; /* Puedes cambiar el color aquí */
+    font-size: 1.1rem;
+    margin-top: 20px;
+}
+
+.powering-section .btn-warning {
+    margin-top: 20px;
+    background-color: #ffc107; /* Color de fondo del botón */
+    border-color: #ffc107; /* Color del borde del botón */
+    color: #212529; /* Color del texto del botón */
+}
+/* Contenedor principal de la sección */
+.powering-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background-color: #007bff; /* Fondo azul, puedes cambiar el valor */
+}
+
+/* Estilo para la imagen de la izquierda */
+.powering-section .left-image {
+    width: 45%;
+}
+
+.powering-section .left-image img {
+    width: 100%;
+    border: 4px solid #15385e; /* Puedes cambiar el color del borde aquí */
+}
+
+/* Contenedor principal de la sección */
+.powering-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background-color:#0f1e64/* Fondo azul oscuro, puedes cambiarlo aquí */
+}
+
+/* Estilo para la imagen de la izquierda */
+.powering-section .left-image {
+    width: 45%;
+}
+
+.powering-section .left-image img {
+    width: 100%;
+}
+
+/* Contenedor principal de la sección */
+.powering-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background-color:#0f1e64; /* Fondo azul oscuro, puedes cambiarlo aquí */
+}
+
+/* Estilo para la imagen de la izquierda */
+.powering-section .left-image {
+    width: 45%;
+}
+
+.powering-section .left-image img {
+    width: 100%;
+    border: none; /* Eliminar el borde de la imagen */
+}
+
+/* Contenido de la derecha (título, texto y botón) */
+.powering-section .right-content {
+    width: 50%;
+    text-align: left;
+}
+
+/* Estilo para el título */
+.powering-section h2 {
+    color: white; /* Color blanco para el título */
+    font-size: 2.5rem;
+}
+
+/* Estilo para el párrafo */
+.powering-section p {
+    color: white; /* Color blanco para el texto */
+    font-size: 1.1rem;
+    margin-top: 20px;
+}
+
+/* Estilo para el botón */
+.powering-section .btn-warning {
+    margin-top: 20px;
+    background-color: #ffc107; /* Color de fondo del botón */
+    border-color: #ffc107; /* Color del borde del botón */
+    color: #212529; /* Color del texto del botón */
+}
+/*tamlo*/
+.text-small {
+    font-size: 30px;  /* Cambia 18px a cualquier número que desees */
+}
+
+/* Asegúrate de agregar esta sección al archivo de estilo CSS */
+
+.news-button {
+    background-color: #00bcd4;  /* Celeste */
+    color: white;
+    border: none;
+    padding: 15px 20px;
+    font-size: 16px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px;
+    width: 100%; /* Hace que el botón tenga el mismo tamaño que la imagen */
+    border-radius: 5px;
+}
+
+.news-button:hover {
+    background-color: #0097a7;  /* Cambia a un tono más oscuro cuando el ratón pasa sobre el botón */
+}
+
+.text-center {
+    text-align: center;
+}
+
+.mb-3 {
+    margin-bottom: 1rem;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+/* Estilo de la tarjeta */
+.news-card {
+    background-color: #2F80ED; /* Azul idéntico */
+    color: white;
+    padding: 20px;
+    border-radius: 12px;
+    width: 320px;
+    font-family: 'Arial', sans-serif;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Título */
+.news-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 12px;
+    line-height: 1.4;
+}
+
+/* Sección de autor y fecha */
+.news-meta {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+
+.author-img {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+.author-name {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.news-date {
+    display: flex;
+    align-items: center;
+    opacity: 0.8;
+}
+
+.news-date i {
+    margin-right: 5px;
+}
+
+/* Texto del cuerpo */
+.news-text {
+    font-size: 14px;
+    opacity: 0.9;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+/* Botón de "Learn More" */
+.news-link {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 14px;
+    display: inline-flex;
+    align-items: center;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.news-link:hover {
+    opacity: 0.8;
+}
+
+/* Estilo para los títulos */
+.fw-bold {
+    font-weight: bold;
+    font-size: 18px; /* Ajusta este valor para cambiar el tamaño de la fuente */
+}
+
+/* Si quieres algo aún más específico, puedes hacerlo de la siguiente manera */
+.fw-bold.resources {
+    font-size: 20px;  /* Cambia a tu gusto */
+}
+
+.fw-bold.product {
+    font-size: 22px;  /* Cambia a tu gusto */
+}
+
+.fw-bold.about {
+    font-size: 16px;  /* Cambia a tu gusto */
+}
+.animated-img {
+    width: 100px; /* Ajusta el tamaño según sea necesario */
+    height: auto;
+    display: block;
+    animation: slide 8s infinite alternate ease-in-out;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(10px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+/* Animación de aparición con efecto de desvanecimiento */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+Si tienes 19 imágenes y quieres que las animaciones se apliquen correctamente en grupos de 4 (excepto la última), aquí tienes un código mejor estructurado.  
+
+### 🔹 **Solución Mejorada**
+Este código divide las imágenes en grupos de 4 (excepto la última) y les asigna diferentes animaciones.
+
+```css
+/* Animaciones */
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.8); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes slideUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeOutIn {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes zoomInOut {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+@keyframes rotateIn {
+    from { opacity: 0; transform: rotate(-10deg) scale(0.8); }
+    to { opacity: 1; transform: rotate(0deg) scale(1); }
+}
+
+@keyframes bounceEffect {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+@keyframes flipIn {
+    from { transform: rotateY(90deg); opacity: 0; }
+    to { transform: rotateY(0deg); opacity: 1; }
+}
+
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+}
+
+/* Asignar animaciones en grupos de 4 imágenes */
+img:nth-child(4n-3),
+img:nth-child(4n-2),
+img:nth-child(4n-1),
+img:nth-child(4n) {
+    animation: fadeIn 1.5s ease-in-out, slideUp 2s ease-out;
+}
+
+img:nth-child(4n+1),
+img:nth-child(4n+2),
+img:nth-child(4n+3),
+img:nth-child(4n+4) {
+    animation: rotateIn 1.5s ease-in-out, bounceEffect 2s ease-in-out infinite;
+}
+
+img:nth-child(8n+1),
+img:nth-child(8n+2),
+img:nth-child(8n+3),
+img:nth-child(8n+4) {
+    animation: flipIn 1.5s ease-in-out, shake 1.5s ease-in-out infinite;
+}
+
+/* Última imagen con animación diferente */
+img:nth-child(19) {
+    animation: zoomInOut 3s ease-in-out infinite, fadeOutIn 4s ease-in-out infinite;
+}
+/* 🔹 Animación única para la primera imagen */
+@keyframes firstAnimation {
+    0% { opacity: 0; transform: scale(0.5) rotate(10deg); }
+    50% { opacity: 1; transform: scale(1.1) rotate(-5deg); }
+    100% { opacity: 1; transform: scale(1) rotate(0deg); }
+}
+
+img:nth-child(1) {
+    animation: firstAnimation 3s ease-in-out infinite alternate;
+}
+
+/* 🔹 Animaciones para el primer grupo (imágenes 2-10) */
+@keyframes fadeIn {
+    0% { opacity: 0; transform: scale(0.8); }
+    50% { opacity: 1; transform: scale(1.05); }
+    100% { opacity: 1; transform: scale(1); }
+}
+
+@keyframes slideUp {
+    0% { opacity: 0; transform: translateY(20px); }
+    50% { opacity: 1; transform: translateY(-5px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+img:nth-child(n+2):nth-child(-n+10) {
+    animation: fadeIn 2s ease-in-out infinite alternate, slideUp 3s ease-in-out infinite alternate;
+}
+
+/* 🔹 Animaciones para el segundo grupo (imágenes 11-19) */
+@keyframes rotateIn {
+    0% { opacity: 0; transform: rotate(-10deg) scale(0.8); }
+    50% { opacity: 1; transform: rotate(10deg) scale(1.1); }
+    100% { opacity: 1; transform: rotate(0deg) scale(1); }
+}
+
+@keyframes bounceEffect {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+img:nth-child(n+11
+
+
