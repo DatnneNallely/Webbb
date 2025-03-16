@@ -5,7 +5,13 @@ https://datnne.online
  
  
  
+
+ 
+ 
+ 
  Estructura General
+
+
 La página web es un sitio moderno y bien estructurado que promociona una aplicación o plataforma de comunicación, destacando sus características y funcionalidades clave. Usa Bootstrap 5 para diseño responsivo y cuenta con secciones claramente organizadas.
 
 2. Encabezado y Navegación
