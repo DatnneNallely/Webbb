@@ -1,3 +1,6 @@
+PAGINA WEB (Caso 2)
+
+
 https://datnne.online
 
 ![image](https://github.com/user-attachments/assets/eecde3f8-089f-4613-a68c-d680d720929f)
@@ -100,7 +103,7 @@ Acerca de: Sobre la empresa, blog, prensa y oportunidades laborales.
  JavaScript para el chat
 
 Permite abrir y cerrar el chat con un botón flotante.
- Bootstrap 5
+ 
 
 Facilita el diseño responsivo y la estructura flexible.
 Uso de imágenes e íconos
